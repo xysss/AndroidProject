@@ -29,6 +29,7 @@ import com.scwang.smart.refresh.layout.api.RefreshLayout
 import com.tencent.bugly.crashreport.CrashReport
 import com.tencent.mmkv.MMKV
 import com.xys.demo.R
+import com.xys.demo.app.AppApplication.Companion.app
 import com.xys.demo.http.glide.GlideApp
 import okhttp3.OkHttpClient
 import timber.log.Timber
@@ -36,6 +37,10 @@ import timber.log.Timber
 /**
  *    desc   : 应用入口
  */
+
+//全局上下文，可直接拿
+val appContext: Application by lazy { app }
+
 class AppApplication : Application() {
 
     @Log("启动耗时")
@@ -44,6 +49,7 @@ class AppApplication : Application() {
         initSdk(this)
     }
 
+    //低内存回调方法
     override fun onLowMemory() {
         super.onLowMemory()
         // 清理所有图片内存缓存
@@ -57,11 +63,14 @@ class AppApplication : Application() {
     }
 
     companion object {
+        lateinit var app: Application
 
         /**
          * 初始化一些第三方框架
          */
         fun initSdk(application: Application) {
+            app = application
+
             // 设置标题栏初始化器
             TitleBar.setDefaultStyle(TitleBarStyle())
 
