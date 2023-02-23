@@ -50,7 +50,7 @@ class HomeFragment : TitleBarFragment<HomeActivity>(), OnTabListener,
     override fun initView() {
         pagerAdapter = FragmentPagerAdapter(this)
         pagerAdapter!!.addFragment(StatusFragment.newInstance(), "列表演示")
-        pagerAdapter!!.addFragment(BrowserFragment.newInstance("https://github.com/getActivity"), "网页演示")
+        pagerAdapter!!.addFragment(BrowserFragment.newInstance("https://github.com/xysss/AndroidProject"), "网页演示")
         viewPager?.adapter = pagerAdapter
         viewPager?.addOnPageChangeListener(this)
         tabAdapter = TabAdapter(getAttachActivity()!!)
