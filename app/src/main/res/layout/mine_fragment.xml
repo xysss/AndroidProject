@@ -160,6 +160,7 @@
                 android:text="点我进入崩溃捕捉界面" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:visibility="gone"
                 android:id="@+id/btn_mine_pay"
                 style="@style/ButtonStyle"
                 android:layout_width="match_parent"

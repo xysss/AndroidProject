@@ -37,13 +37,13 @@ class PersonalDataActivity : AppActivity() {
     private val addressView: SettingBar? by lazy { findViewById(R.id.sb_person_data_address) }
 
     /** 省 */
-    private var province: String? = "广东省"
+    private var province: String? = "北京市"
 
     /** 市 */
-    private var city: String? = "广州市"
+    private var city: String? = "北京市"
 
     /** 区 */
-    private var area: String? = "天河区"
+    private var area: String? = "顺义区"
 
     /** 头像地址 */
     private var avatarUrl: Uri? = null
@@ -67,7 +67,7 @@ class PersonalDataActivity : AppActivity() {
         }
 
         idView?.setRightText("880634")
-        nameView?.setRightText("Android 轮子哥")
+        nameView?.setRightText("Android xys")
         val address: String = province + city + area
         addressView?.setRightText(address)
     }

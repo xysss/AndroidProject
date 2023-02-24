@@ -52,7 +52,7 @@ class SettingActivity : AppActivity(), SwitchButton.OnCheckedChangeListener {
         // 获取应用缓存大小
         cleanCacheView?.setRightText(CacheDataManager.getTotalCacheSize(this))
         languageView?.setRightText("简体中文")
-        phoneView?.setRightText("181****1413")
+        phoneView?.setRightText("150****1683")
         passwordView?.setRightText("密码强度较低")
     }
 
@@ -115,7 +115,7 @@ class SettingActivity : AppActivity(), SwitchButton.OnCheckedChangeListener {
             }
             R.id.sb_setting_agreement -> {
 
-                BrowserActivity.start(this, "https://github.com/getActivity/Donate")
+                BrowserActivity.start(this, "https://github.com/xysss/AndroidProject")
             }
             R.id.sb_setting_about -> {
 
