@@ -42,14 +42,14 @@ class RequestHandler constructor(private val application: Application) : IReques
         if (!response.isSuccessful) {
             // 返回响应异常
             throw ResponseException(
-                application.getString(R.string.http_response_error) + "，responseCode：" + response.code() + "，message：" + response.message(),
+                application.getString(R.string.http_response_error) + "，responseCode：" + response.code + "，message：" + response.message,
                 response
             )
         }
         if ((Headers::class.java == type)) {
-            return response.headers()
+            return response.headers
         }
-        val body: ResponseBody = response.body() ?: return null
+        val body: ResponseBody = response.body ?: return null
         if ((InputStream::class.java == type)) {
             return body.byteStream()
         }

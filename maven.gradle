@@ -11,6 +11,10 @@ static def addCommonMaven(RepositoryHandler handler) {
     handler.google()
     // noinspection JcenterRepositoryObsolete
     handler.jcenter()
+    handler.maven {
+        name 'maven-snapshot'
+        url 'https://s01.oss.sonatype.org/content/repositories/snapshots/'
+    }
 }
 
 ext.addCommonMaven = this.&addCommonMaven
