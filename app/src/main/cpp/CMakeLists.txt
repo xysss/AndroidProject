@@ -15,10 +15,11 @@ project("kotlinjnidemo")
 # Gradle automatically packages shared libraries with your APK.
 
 add_library( # Sets the name of the library.
-        jTest
+        jTest #库名
 
-        # Sets the library as a shared library.
-        SHARED
+        SHARED #设置为so共享库，如果需要创建静态库.a文件，需要声明为STAIC
+        src/hellojni.cpp #需要参与编译的src文件，如果有多个，则使用空格或者换行包括进来
+
         # Provides a relative path to your source file(s).
         native-lib.cpp)
 
@@ -40,7 +41,6 @@ find_library( # Sets the name of the path variable.
 
 target_link_libraries( # Specifies the target library.
         jTest
-
         # Links the target library to the log library
         # included in the NDK.
         ${log-lib})
