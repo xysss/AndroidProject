@@ -1,10 +1,9 @@
-package com.xys.demo.util
+package com.xys.demo.serialport
 
 import com.serial.port.manage.data.WrapReceiverData
 import com.serial.port.manage.data.WrapSendData
 import com.serial.port.manage.listener.OnAddressCheckCall
 import com.serial.port.manage.listener.OnDataCheckCall
-import com.xys.demo.serialport.SerialPortHelper
 import java.io.InputStream
 
 

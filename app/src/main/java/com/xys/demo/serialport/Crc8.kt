@@ -1,4 +1,4 @@
-package com.xys.demo.util
+package com.xys.demo.serialport
 
 import okhttp3.internal.and
 

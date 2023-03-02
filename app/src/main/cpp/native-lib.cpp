@@ -1,7 +1,6 @@
 #include <jni.h>
 #include <string>
 #include <android/log.h>
-#include "../include/hellojni.h"
 #include <assert.h>
 
 #define TAG "learnJNI" // 这个是自定义的LOG的标识

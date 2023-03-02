@@ -1,8 +1,8 @@
 package com.xys.demo.serialport.commond
 
 import com.serial.port.manage.command.protocol.BaseProtocol
-import com.xys.demo.util.ByteUtils
-import com.xys.demo.util.Crc8
+import com.xys.demo.serialport.ByteUtils
+import com.xys.demo.serialport.Crc8
 
 
 /**

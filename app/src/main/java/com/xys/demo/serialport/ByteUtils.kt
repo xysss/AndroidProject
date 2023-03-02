@@ -1,4 +1,4 @@
-package com.xys.demo.util
+package com.xys.demo.serialport
 
 import android.util.Log
 import java.math.RoundingMode

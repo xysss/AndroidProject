@@ -6,7 +6,7 @@ import com.serial.port.manage.SerialPortKit
 import com.serial.port.manage.SerialPortManager
 import com.xys.demo.BuildConfig
 import com.xys.demo.app.appContext
-import com.xys.demo.util.DataConvertUtil
+import com.xys.demo.serialport.DataConvertUtil
 import com.xys.demo.util.baudRate
 import com.xys.demo.util.isNeedNewInit
 
