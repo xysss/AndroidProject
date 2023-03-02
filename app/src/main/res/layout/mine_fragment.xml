@@ -24,6 +24,14 @@
             android:orientation="vertical">
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_mine_jni"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_30"
+                android:text="点击测试jni" />
+
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_mine_dialog"
                 style="@style/ButtonStyle"
                 android:layout_width="match_parent"

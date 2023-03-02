@@ -39,7 +39,7 @@ class MineFragment : TitleBarFragment<HomeActivity>() {
             R.id.btn_mine_dialog, R.id.btn_mine_hint, R.id.btn_mine_login, R.id.btn_mine_register,
             R.id.btn_mine_forget, R.id.btn_mine_reset, R.id.btn_mine_change, R.id.btn_mine_personal, R.id.btn_mine_setting,
             R.id.btn_mine_about, R.id.btn_mine_guide, R.id.btn_mine_browser, R.id.btn_mine_image_select, R.id.btn_mine_image_preview,
-            R.id.btn_mine_video_select, R.id.btn_mine_video_play, R.id.btn_mine_crash, R.id.btn_mine_pay)
+            R.id.btn_mine_video_select, R.id.btn_mine_video_play, R.id.btn_mine_crash, R.id.btn_mine_pay, R.id.btn_mine_jni)
     }
 
     override fun initData() {}
@@ -47,6 +47,9 @@ class MineFragment : TitleBarFragment<HomeActivity>() {
     @SingleClick
     override fun onClick(view: View) {
         when (view.id) {
+            R.id.btn_mine_jni -> {
+
+            }
             R.id.btn_mine_dialog -> {
                 startActivity(DialogActivity::class.java)
             }
